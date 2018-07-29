@@ -1,0 +1,8 @@
+{
+  "db": {
+    "host": "172.16.17.130",
+    "user": "root",
+    "password": "root",
+    "database": "test"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "appenders": {
+    "access": {
+      "type": "dateFile",
+      "filename": "logs/http",
+      "pattern": "_yyyy-MM-dd.log",
+      "alwaysIncludePattern": true,
+      "absolute": false,
+      "maxLogSize": 1024,
+      "backup": 3,
+      "category": "dateFileLog"
+    },
+    "rule-console": {
+      "type": "console"
+    },
+    "errorFile": {
+      "type": "dateFile",
+      "filename": "logs/error",
+      "encoding": "utf-8",
+      "absolute": false,
+      "maxLogSize": 1024,
+      "backup": 3,
+      "pattern": "_yyyy-MM-dd.log",
+      "alwaysIncludePattern": true
+    },
+    "rule-error": {
+      "type": "logLevelFilter",
+      "level": "ERROR",
+      "appender": "errorFile"
+    },
+    "rule-file": {
+      "type": "dateFile",
+      "filename": "logs/server",
+      "encoding": "utf-8",
+      "absolute": false,
+      "maxLogSize": 1024,
+      "backup": 3,
+      "pattern": "_yyyy-MM-dd.log",
+      "alwaysIncludePattern": true
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": [
+        "rule-console",
+        "rule-file",
+        "rule-error"
+      ],
+      "level": "debug"
+    },
+    "http": {
+      "appenders": [
+        "access"
+      ],
+      "level": "info"
+    }
+  },
+  "replaceConsole": true
+}

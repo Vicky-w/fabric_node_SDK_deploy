@@ -1,0 +1,58 @@
+{
+  "peer0": {
+    "user_id": "Admin@org1.lychee.com",
+    "msp_id": "Org1MSP",
+    "channel_id": "mychannel",
+    "chaincode_id": "mycc",
+    "org": "org1",
+    "peerName": "peer0org1",
+    "orderer_server_hostname": "orderer1.lychee.com",
+    "event_url": "grpcs://172.16.17.57:7053",
+    "peer_url": "grpcs://172.16.17.57:7051",
+    "privateKeyFolder": "config/cert/crypto-config/peerOrganizations/org1.lychee.com/users/Admin@org1.lychee.com/msp/keystore",
+    "signedCert": "./config/cert/crypto-config/peerOrganizations/org1.lychee.com/users/Admin@org1.lychee.com/msp/signcerts/Admin@org1.lychee.com-cert.pem",
+    "peer_tls_cacerts": "./config/cert/crypto-config/peerOrganizations/org1.lychee.com/peers/peer0.org1.lychee.com/tls/ca.crt",
+    "server_hostname": "peer0.org1.lychee.com"
+  },
+  "peer1": {
+    "user_id": "Admin@org2.lychee.com",
+    "msp_id": "Org2MSP",
+    "channel_id": "mychannel",
+    "chaincode_id": "mycc",
+    "org": "org2",
+    "peerName": "peer0org2",
+    "orderer_server_hostname": "orderer2.lychee.com",
+    "event_url": "grpcs://172.16.17.133:7053",
+    "peer_url": "grpcs://172.16.17.133:7051",
+    "privateKeyFolder": "./config/cert/crypto-config/peerOrganizations/org2.lychee.com/users/Admin@org2.lychee.com/msp/keystore",
+    "signedCert": "./config/cert/crypto-config/peerOrganizations/org2.lychee.com/users/Admin@org2.lychee.com/msp/signcerts/Admin@org2.lychee.com-cert.pem",
+    "peer_tls_cacerts": "./config/cert/crypto-config/peerOrganizations/org2.lychee.com/peers/peer0.org2.lychee.com/tls/ca.crt",
+    "server_hostname": "peer0.org2.lychee.com"
+  },
+  "orderer1": {
+    "orderer_url": "grpcs://172.16.17.56:7050",
+    "orderer_privateKeyFolder": "./config/cert/crypto-config/ordererOrganizations/lychee.com/users/Admin@lychee.com/msp/keystore",
+    "certificate": "./config/cert/crypto-config/ordererOrganizations/lychee.com/orderers/orderer1.lychee.com/msp/admincerts/Admin@lychee.com-cert.pem",
+    "orderer_user": "ordererAdmin",
+    "orderer_msp": "OrdererMSP",
+    "orderer_hostname": "orderer1.lychee.com",
+    "orderer_tls_cacerts": "./config/cert/crypto-config/ordererOrganizations/lychee.com/orderers/orderer1.lychee.com/tls/ca.crt",
+    "orderer_signedCert": "./config/cert/crypto-config/ordererOrganizations/lychee.com/users/Admin@lychee.com/msp/signcerts/Admin@lychee.com-cert.pem"
+  },
+  "orderer2": {
+    "orderer_hostname": "orderer2.lychee.com",
+    "orderer_url": "grpcs://172.16.17.57:7050",
+    "orderer_privateKeyFolder": "./config/cert/crypto-config/ordererOrganizations/lychee.com/users/Admin@lychee.com/msp/keystore",
+    "certificate": "./config/cert/crypto-config/ordererOrganizations/lychee.com/orderers/orderer2.lychee.com/msp/admincerts/Admin@lychee.com-cert.pem",
+    "orderer_user": "ordererAdmin",
+    "orderer_msp": "OrdererMSP",
+    "orderer_tls_cacerts": "./config/cert/crypto-config/ordererOrganizations/lychee.com/orderers/orderer2.lychee.com/tls/ca.crt",
+    "orderer_signedCert": "./config/cert/crypto-config/ordererOrganizations/lychee.com/users/Admin@lychee.com/msp/signcerts/Admin@lychee.com-cert.pem"
+  },
+  "chaincode": {
+    "chaincodeId": "mycc",
+    "chaincodeVersion": "v4",
+    "language": "golang",
+    "chaincode_path": "chaincode_example02"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "fabric-nodesdk-deploy",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "log4js": "^2.8.0",
+    "morgan": "~1.9.0",
+    "mysql": "^2.15.0"
+  },
+  "author": "VickyWang",
+  "license": "Apache-2.0",
+  "keywords": [
+    "Hyperledger",
+    "Fabric",
+    "Test",
+    "NodeSDK",
+    "Application"
+  ]
+}
